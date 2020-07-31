@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: absolute;
+  width: 40%;
+  border-radius: 10px;
+  display: flex;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.26);
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.container .img-head img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+.container .attribution {
+  position: absolute;
+  bottom: -40px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: "Manrope";
+}
+.container .attribution a {
+  color: black;
+}
+.container .content .header {
+  padding: 20px;
+  padding-bottom: 10px;
+  font-family: "Manrope";
+  font-weight: bold;
+  font-size: 17px;
+}
+.container .content .stuff {
+  padding: 20px;
+  padding-top: 0;
+  font-family: "Manrope";
+  font-size: 11px;
+  color: grey;
+}
+.container .content .bio {
+  display: flex;
+  padding: 20px;
+  padding-top: 0;
+  font-family: "Manrope";
+}
+.container .content .bio .avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+}
+.container .content .bio .info {
+  padding: 0 10px;
+  font-size: 11px;
+}
+.container .content .bio .info .date {
+  color: grey;
+}
+.container .content .bio .tooltip {
+  position: relative;
+  margin-left: auto;
+}
+.container .content .bio .tooltip .share-icon {
+  padding: 10px;
+  background-color: #ecf2f8;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.container .content .bio .tooltip .tooltiptext {
+  transition: 0.5s;
+  opacity: 0;
+  display: flex;
+  box-shadow: 0 7px 10px -2px rgba(0, 0, 0, 0.26);
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  width: 184px;
+  background-color: #48556a;
+  color: #9eafc2;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 0;
+  letter-spacing: 3px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -92px;
+  font-size: 10px;
+}
+.container .content .bio .tooltip .tooltiptext .icons {
+  color: white;
+  padding-left: 10px;
+  font-size: 16px;
+}
+.container .content .bio .tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #48556a transparent transparent transparent;
+}
+.container .content .bio .tooltip:hover .tooltiptext {
+  /*visibility: visible;*/
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 80%;
+    left: 50%;
+    flex-direction: column;
+  }
+  .container .img-head img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  .container .content .header {
+    padding: 30px;
+    padding-bottom: 10px;
+    font-size: 15px;
+  }
+  .container .content .stuff {
+    font-size: 13.5px;
+    padding: 30px;
+    padding-top: 0;
+  }
+  .container .content .bio {
+    padding-bottom: 10px !important;
+  }
+  .container .tooltip {
+    position: relative;
+    margin-left: auto;
+  }
+  .container .tooltip .share-icon {
+    padding: 10px;
+    position: relative;
+    background-color: #ecf2f8;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .container .tooltip .tooltiptext {
+    transition: 0.5s;
+    opacity: 0;
+    display: flex;
+    box-shadow: 0 7px 10px -2px rgba(0, 0, 0, 0.26);
+    justify-content: flex-start !important;
+    width: 80vw !important;
+    align-items: center;
+    visibility: hidden;
+    background-color: #48556a;
+    color: #9eafc2;
+    text-align: center;
+    height: 40px;
+    border-radius: 0 0 6px 6px !important;
+    padding: 10px 0;
+    letter-spacing: 3px;
+    position: absolute;
+    z-index: 1;
+    bottom: -10px !important;
+    left: 0 !important;
+    margin-left: -65.1vw !important;
+    font-size: 10px;
+  }
+  .container .tooltip .tooltiptext .share-text {
+    padding-left: 30px;
+    font-size: 13px;
+  }
+  .container .tooltip .tooltiptext .icons {
+    color: white;
+    padding-left: 20px !important;
+    font-size: 20px !important;
+  }
+  .container .tooltip .tooltiptext .icons .fab {
+    padding-left: 2px;
+  }
+  .container .tooltip .tooltiptext::after {
+    content: none !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
